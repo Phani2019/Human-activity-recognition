@@ -12,7 +12,7 @@ By using the sensors(Gyroscope and accelerometer) in a smartphone, they have cap
 prefix 't' in those metrics denotes time.
 
 suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.
-Feature names
+# Feature names
 These sensor signals are preprocessed by applying noise filters and then sampled in fixed-width windows(sliding windows) of 2.56 seconds each with 50% overlap. ie., each window has 128 readings.
 
 From Each window, a feature vector was obtianed by calculating variables from the time and frequency domain.
@@ -83,7 +83,7 @@ In the dataset, Y_labels are represented as numbers from 1 to 6 as their identif
 Train and test data were saperated
 
 The readings from 70% of the volunteers were taken as trianing data and remaining 30% subjects recordings were taken for test data
-Data
+# Data
 
 All the data is present in 'UCI_HAR_dataset/' folder in present working directory.
     Feature names are present in 'UCI_HAR_dataset/features.txt'
@@ -95,7 +95,7 @@ All the data is present in 'UCI_HAR_dataset/' folder in present working director
         'UCI_HAR_dataset/test/X_test.txt'
         'UCI_HAR_dataset/test/subject_test.txt'
         'UCI_HAR_dataset/test/y_test.txt'
-Data Size :
+# Data Size :
 27 MB
 Quick overview of the dataset :
 Accelerometer and Gyroscope readings are taken from 30 volunteers(referred as subjects) while performing the following 6 Activities.
@@ -129,26 +129,26 @@ Given a new datapoint we have to predict the Activity
 Exploratory Data Analysis
 "Without domain knowledge EDA has no meaning, without EDA a problem has no soul."
 
-1. Featuring Engineering from Domain Knowledge
+# 1. Featuring Engineering from Domain Knowledge
 Static and Dynamic Activities
     In static activities (sit, stand, lie down) motion information will not be very useful.
     In the dynamic activities (Walking, WalkingUpstairs,WalkingDownstairs) motion info will be significant.
 Apply Machine Learning Models
-Logistic Regression with Grid Search
+# Logistic Regression with Grid Search
 | Accuracy |
 0.9630132337970818
-Linear SVC with GridSearch
+# Linear SVC with GridSearch
 | Accuracy |
 0.9681031557516118
-RBF Kernel SVM with GridSearch
+# RBF Kernel SVM with GridSearch
 | Accuracy |
 0.9626739056667798
-Decision Tree with GridSearch
+# Decision Tree with GridSearch
 | Accuracy |
 0.8635900916185952
-Random Forest Classifier with GridSearch
+# Random Forest Classifier with GridSearch
 | Accuracy |
 0.9121140142517815
-Gradient Boosted Decision Trees With GridSearch
+# Gradient Boosted Decision Trees With GridSearch
 | Accuracy |
 0.9226331862911435
